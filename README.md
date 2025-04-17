@@ -62,7 +62,7 @@ with open("./demo/input.wav", "rb") as f:
 
 | Cible | Dockerfile / docker‑compose |
 |-------|----------------------------|
-| **CPU** | Dans le *Dockerfile* : remplacer l’image de base par<br>`#FROM python:3.9-slim for cpu`.<br>Dans *docker‑compose.yml* : **supprimer** le bloc :<br>```yaml
+| **CPU** | Dans le *Dockerfile* : remplacer l’image de base par<br>`#FROM python:3.9-slim for cpu`.<br>Dans *docker‑compose.yml* : **supprimer** le bloc :<br>
     runtime: nvidia
     deploy:
       resources:
@@ -71,7 +71,7 @@ with open("./demo/input.wav", "rb") as f:
             - driver: nvidia
               count: all
               capabilities: [gpu]
-``` |
+ |
 | **GPU** | Ne rien changer. |
 
 ---

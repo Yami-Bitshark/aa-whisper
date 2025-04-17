@@ -42,6 +42,8 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
+RUN pip install pytest
+
 EXPOSE 80
 #uncomment pour cas pas de docker compose
 #Attention, necessite rebuild en cas de cha,gement de code.

@@ -42,7 +42,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
-RUN pip install pytest
+RUN pip install pytest httpx
 
 EXPOSE 80
 #uncomment pour cas pas de docker compose
